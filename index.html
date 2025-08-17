@@ -22,28 +22,43 @@ body {
 <iframe width="560" height="315" src="https://www.youtube.com/embed/aAD8eV06OcU?si=3CGQTV8DqqwlI9Qh?rel=0&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     
     <h1>leave a review!!</h1>
-<form action="#"> 
-  <textarea id="textarea" cols="30" rows="10" maxlength="100"></textarea>
-  </form>
-</p>
+  <form action="#">
+        <textarea id="textarea" cols="30" rows="10"></textarea>
+       
+    </form>
+    <meter id="myMeter" value="0" max="100"></meter>
+    <p id="here"></p>
+
 
     <dialog><p>idk how to do that but ty for trying!!</p></dialog>
     <button onclick="openMe()">submit</button>
 
-    <meter id="myMeter" value="0" max="100"></meter>
-    <h3 id="counterPlace"> </h3>
-      <script>
-       let myValue = document.getElementById("myMeter");
- 
+   
+       <script>
 
-          function increase() {
-              var lenth = myTextArea.value.length; 
-              value = length;
-            MeterValue.setAttribute("value",value);
-            document.getElementById("counterPlace").innterHTML = MeterValue.value;
-          }
+
+    
+        let myValue = document.getElementById("myMeter");
+    
+        function increase() {
+            let myTextArea = document.getElementById("textarea");
+            var length = myTextArea.value.length;
+            value = length
+            myValue.setAttribute("value", value);
+            document.getElementById("here").innerHTML = myValue.value;
+
+
+
+        }
         setInterval(increase, 100)
-      </script>
+       
+
+
+
+
+
+
+    </script>
      
       <script>
           function openMe() { 
