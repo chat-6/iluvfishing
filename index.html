@@ -10,11 +10,8 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
-@media (orientation: portrait){
-  body {
-    background-color: coral;
-  }
-}
+
+
  /* Container needed to position the button. Adjust the width as needed */
 .container {
   position: relative;
@@ -46,6 +43,11 @@ body {
 .container .btn:hover {
   background-color: aquamarine;
 } 
+@media only screen and (orientation: portrait) {
+  body {
+    background-color: coral;
+  }
+}
 </style>
 <head>
 <title>iluvfishing</title>
