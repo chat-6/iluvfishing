@@ -4,6 +4,37 @@
 body {
   background-image: url('Trout_Slam_JK_20170920_076_1440x960-1-e1679792747614.jpg');
 }
+ /* Container needed to position the button. Adjust the width as needed */
+.container {
+  position: relative;
+  width: 50%;
+}
+
+/* Make the image responsive */
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.container .btn:hover {
+  background-color: black;
+} 
 </style>
 <head>
 <title>iluvfishing</title>
@@ -36,10 +67,15 @@ body {
   }
 </script>
 
-<button onclick="playAudio()">Play Sound</button>
-    
+
+
+    <div class ="container">
 <img src="spinfish.gif" alt="spinny fish" width="800" height="600">
+      <button onclick="playAudio()">Play Sound</button>
+    </div>
     <h1>leave a review!!</h1>
+
+    
   <form action="#">
         <textarea id="textarea" cols="30" rows="10"></textarea>
        
