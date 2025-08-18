@@ -3,14 +3,24 @@
     <head>
         <title>iluvfishclicking</title>
         <style>
+            .container{
+            position: relative;
+            width: 176px;
+            height: 60px;
+            border-radius: 10px;
+            }
+            .containery{
+            position: absolute;
+            width: 176px;
+            height: 60px;
+            border-radius: 10px;
+            }
             a.button {
-            padding: 1px;
             border-style: outset;
             border-width: 5px;
             border-radius: 10px;
-             color:rgba(0, 0, 0, 0.767);
-             background-position: center;
-            background-image: url(background.jpg);
+            color:rgba(0, 0, 0, 0.767);
+            background-position: center;
             border-color:rgb(0, 255, 221);
             text-decoration:underline wavy rgba(0, 132, 255, 0.329);}
             
@@ -34,7 +44,10 @@
                 <p style="font-size: 20px;margin-left: 30px;">Mr. Olsen: 954</p>
                 <p style="font-size: 20px;margin-left: 30px;">DaveII: 3</p>
             </div>
-            <a class='button' style="height: 60px; font-size: 40px; margin-left: 90px; margin-top: 100px;" href="index.html">Get Back!</a>
+            <div class="container" style="text-align: center;">
+                <div class="containery"><video style="transform: scaleX(1.55);" loop muted autoplay src="Bckg.mp4"></video></div>
+                <div class="containery"><a class='button' style="height: 60px; font-size: 40px;" href="index.html">Get Back!</a></div>
+            </div>
         </div>
     </body>
 
