@@ -40,11 +40,12 @@
   background-color: aquamarine;
 } 
 
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%; 
+.video-bg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  min-width: 100%;
   min-height: 100%;
 }
 </style>
@@ -53,7 +54,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-  <video autoplay muted loop id="myVideo">
+  <video class="video-bg" autoplay muted loop id="myVideo">
   <source src="Bckg.mp4" type="video/mp4">
 </video>
 
