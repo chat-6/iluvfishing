@@ -54,12 +54,18 @@
         </div>
     </body>
 
+    <audio id="fishSound" src="fishsound.mp3" preload="auto"></audio>
+
     <script>
      var clicks = 0;
     function getClicked() {
 
         clicks += 1;
         document.getElementById("fish").innerHTML = clicks;
+
+        var audio = document.getElementById("fishSound");
+        audio.currentTime = 0; // rewind to start
+        audio.play();
 
 
     }
