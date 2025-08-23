@@ -5,35 +5,35 @@
 		<title>Water 3d</title>
 		<style>
 			body {
-			margin: 0;
-			padding: 0;
-			font-family: verdana;
-			font-size: 15px;
-			overflow: hidden; /* prevent scrollbars */
+				margin: 0;
+				padding: 0;
+				font-family: verdana;
+				font-size: 15px;
+				overflow: hidden; /* prevent scrollbars */
 			}
 			.button {
-			background-color: #606060;
-			border: none;
-			color: white;
-			padding: 15px 32px;
-			font-size: 16px;
-			margin: 4px 2px;
-			cursor: pointer;
-			position: relative;
-			z-index: 2; /* keep buttons above video + canvas */
+				background-color: #606060;
+				border: none;
+				color: white;
+				padding: 15px 32px;
+				font-size: 16px;
+				margin: 4px 2px;
+				cursor: pointer;
+				position: relative;
+				z-index: 2; /* keep buttons above video + canvas */
 			}
 			#bg-video {
-			position: fixed;
-			top: 0;
-			left: 0;
-			min-width: 100%;
-			min-height: 100%;
-			object-fit: cover;
-			z-index: -1; /* push behind everything */
+				position: fixed;
+				top: 0;
+				left: 0;
+				min-width: 100%;
+				min-height: 100%;
+				object-fit: cover;
+				z-index: -1; /* push behind everything */
 			}
 			#container {
-			position: relative;
-			z-index: 1; /* canvas above video */
+				position: relative;
+				z-index: 1; /* canvas above video */
 			}
 		</style>
 	</head>
@@ -44,7 +44,7 @@
   			<source src="Bckg.mp4" type="video/mp4">
   			Your browser does not support the video tag.
 		</video>
-		
+
 		<button id = "buttonRun" onclick="run()" class="button">Run</button>
 		<button onclick="restart()" class="button">Restart</button>
 
