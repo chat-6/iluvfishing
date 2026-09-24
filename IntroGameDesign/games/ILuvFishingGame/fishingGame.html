@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GameLoop</title>
+        <style> 
+            *{
+                margin: 0;
+                overflow: hidden;
+            }
+        </style>
+    </head>
+    <body style = "background-color:#4e95ff;">
+       <canvas id="canv">
+       </canvas> 
+
+       <script src="../../engine/Vector2.js"></script>
+       <script src="../../engine/input.js"></script>
+       <script src="../../engine/Engine.js"></script>
+       <script src="../../engine/Component.js"></script>
+       <script src="../../engine/GameObject.js"></script>
+       <script src="../../engine/Scene.js"></script>
+       <script src="../../engine/SceneManager.js"></script>
+       <script src="../../engine/Time.js"></script>
+
+       <script src="../../engine/components/Polygon.js"></script>
+       <script src="../../engine/components/Transform.js"></script>
+       <script src="../../engine/components/TextLabel.js"></script>
+       
+       <script src="./scenes/FishEasyScene.js"></script>
+
+       <script src="./components/PlayerHookController.js"></script>
+       <script src="./components/FishingLineController.js"></script>
+       <script src="./components/FishController.js"></script>
+       <script src="./components/ScoreController.js"></script>
+
+
+       <script src="./gameObjects/PlayerHookObject.js"></script>
+       <script src="./gameObjects/FishingLineObject.js"></script>
+       <script src="./gameObjects/FishObject.js"></script>
+       <script src="./gameObjects/ScoreGameObject.js"></script>
+
+
+       <script src="Assets.js"></script>
+       <script src="Globals.js"></script>
+
+       <script>
+            Engine.start(FishEasyScene)
+
+       </script>
+    </body>
+</html>
